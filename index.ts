@@ -1,6 +1,10 @@
 // Import stylesheets
 import './style.css';
 
-// Write TypeScript code!
-const appDiv: HTMLElement = document.getElementById('app');
-appDiv.innerHTML = `<h1>TypeScript Starter</h1>`;
+
+function printStatusCode(code: string | number) {
+  console.log(`My status code is ${code}.`)
+}
+
+printStatusCode(404);
+printStatusCode('404');
